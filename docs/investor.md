@@ -13,7 +13,6 @@ Get a list of investors
 ````
 HTTP/1.1 200 OK
 {
-  "object": "list",
   "investors": [
     {
       "id": "1001",
@@ -153,66 +152,67 @@ Get a single investor
 ````
 HTTP/1.1 200 OK
 {
-  "object": "investor",
-  "id": "1001",
-  "name": "Monashees Capital",
-  "description": "Monashees is a VC",
-  "logo": "/investors/1001/logo.png",
-  "website": "monashees.com.br",
-  "social_links": [
-    "twitter.com/@monashees"
-  ],
-  "markets": [
-    "fintech",
-    "e-commerce",
-    "saas"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "investments": [
-    {
-      "id": "42",
-      "company": "Magnetis",
-      "deal": "1234"
+  "investor": {
+    "id": "1001",
+    "name": "Monashees Capital",
+    "description": "Monashees is a VC",
+    "logo": "/investors/1001/logo.png",
+    "website": "monashees.com.br",
+    "social_links": [
+      "twitter.com/@monashees"
+    ],
+    "markets": [
+      "fintech",
+      "e-commerce",
+      "saas"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "investments": [
+      {
+        "id": "42",
+        "company": "Magnetis",
+        "deal": "1234"
+      },
+      {
+        "id": "24",
+        "company": "RockContent",
+        "deal": "2345"
+      }
+    ],
+    "people": [
+      {
+        "id": "101",
+        "name": "Eric",
+        "role": "Partner",
+        "image": "/people/101/mug.png"
+      },
+      {
+        "id": "102",
+        "name": "Marcelo",
+        "role": "Partner",
+        "image": "/people/102/mug.png"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     },
-    {
-      "id": "24",
-      "company": "RockContent",
-      "deal": "2345"
-    }
-  ],
-  "people": [
-    {
-      "id": "101",
-      "name": "Eric",
-      "role": "Partner",
-      "image": "/people/101/mug.png"
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
     },
-    {
-      "id": "102",
-      "name": "Marcelo",
-      "role": "Partner",
-      "image": "/people/102/mug.png"
+    "verified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id": "42",
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
-  },
-  "verified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id": "42",
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -225,21 +225,23 @@ Create a new investor
 
 ````
 {
-  "name": "Monashees Capital",
-  "description": "Monashees is a VC",
-  "logo": "/investors/1001/logo.png",
-  "website": "monashees.com.br",
-  "social_links": [
-    "twitter.com/@monashees"
-  ],
-  "markets": [
-    "fintech",
-    "e-commerce",
-    "saas"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ]
+  "investor": {
+    "name": "Monashees Capital",
+    "description": "Monashees is a VC",
+    "logo": "/investors/1001/logo.png",
+    "website": "monashees.com.br",
+    "social_links": [
+      "twitter.com/@monashees"
+    ],
+    "markets": [
+      "fintech",
+      "e-commerce",
+      "saas"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ]
+  }
 }
 ````
 * Sample response:
@@ -247,54 +249,55 @@ Create a new investor
 ````
 HTTP/1.1 201 Created
 {
-  "object": "investor",
-  "id": "1001",
-  "name": "Monashees Capital",
-  "description": "Monashees is a VC",
-  "logo": "/investors/1001/logo.png",
-  "website": "monashees.com.br",
-  "social_links": [
-    "twitter.com/@monashees"
-  ],
-  "markets": [
-    "fintech",
-    "e-commerce",
-    "saas"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "investments": [
-    {
-      "id": "42",
-      "company": "Magnetis",
-      "deal": "1234"
-    },
-    {
-      "id": "24",
-      "company": "RockContent",
-      "deal": "2345"
+  "investor": {
+    "id": "1001",
+    "name": "Monashees Capital",
+    "description": "Monashees is a VC",
+    "logo": "/investors/1001/logo.png",
+    "website": "monashees.com.br",
+    "social_links": [
+      "twitter.com/@monashees"
+    ],
+    "markets": [
+      "fintech",
+      "e-commerce",
+      "saas"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "investments": [
+      {
+        "id": "42",
+        "company": "Magnetis",
+        "deal": "1234"
+      },
+      {
+        "id": "24",
+        "company": "RockContent",
+        "deal": "2345"
+      }
+    ],
+    "people": [
+      {
+        "id": "101",
+        "name": "Eric",
+        "role": "Partner",
+        "image": "/people/101/mug.png"
+      },
+      {
+        "id": "102",
+        "name": "Marcelo",
+        "role": "Partner",
+        "image": "/people/102/mug.png"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "people": [
-    {
-      "id": "101",
-      "name": "Eric",
-      "role": "Partner",
-      "image": "/people/101/mug.png"
-    },
-    {
-      "id": "102",
-      "name": "Marcelo",
-      "role": "Partner",
-      "image": "/people/102/mug.png"
-    }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -307,7 +310,9 @@ Update an investor
 
 ````
 {
-  "description": "Monashees is a cool VC"
+  "investor": {
+    "description": "Monashees is a cool VC"
+  }
 }
 ````
 * Sample response:
@@ -315,34 +320,35 @@ Update an investor
 ````
 HTTP/1.1 200 OK
 {
-  "object": "investor",
-  "id": "1001",
-  "name": "Monashees Capital",
-  "description": "Monashees is a cool VC",
-  "logo": "/investors/1001/logo.png",
-  "website": "monashees.com.br",
-  "social_links": [
-    "twitter.com/@monashees"
-  ],
-  "markets": [
-    "fintech",
-    "e-commerce",
-    "saas"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
+  "investor": {
+    "id": "1001",
+    "name": "Monashees Capital",
+    "description": "Monashees is a cool VC",
+    "logo": "/investors/1001/logo.png",
+    "website": "monashees.com.br",
+    "social_links": [
+      "twitter.com/@monashees"
+    ],
+    "markets": [
+      "fintech",
+      "e-commerce",
+      "saas"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
+    }
   }
 }
 ````
