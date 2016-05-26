@@ -13,7 +13,6 @@ Get a list of companies
 ````
 HTTP/1.1 200 OK
 {
-  "object": "list",
   "companies": [
     {
       "id": "42",
@@ -149,68 +148,69 @@ Get a single company
 ````
 HTTP/1.1 200 OK
 {
-  "object": "company",
-  "id": "42",
-  "name": "Magnetis",
-  "description": "Magnetis is the best online advisor ever",
-  "logo": "/companies/42/logo.png",
-  "website": "magnetis.com.br",
-  "social_links": [
-    "twitter.com/@magnetis"
-  ],
-  "markets": [
-    "financial services",
-    "advisor"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "deals": [
-    {
-      "id": "1234",
-      "date": "2015-08-01",
-      "type": "raised funds",
-      "series": "seed",
-      "investors": [
-        "Monashees",
-        "Redpoint e.ventures",
-        "500Startups"
-      ],
-      "currency": "BRL",
-      "amount": 3_000_000
-    }
-  ],
-  "people": [
-    {
-      "id": "1",
-      "name": "Luciano Tavares",
-      "role": "CEO",
-      "image": "/people/1/mug.png"
+  "company": {
+    "id": "42",
+    "name": "Magnetis",
+    "description": "Magnetis is the best online advisor ever",
+    "logo": "/companies/42/logo.png",
+    "website": "magnetis.com.br",
+    "social_links": [
+      "twitter.com/@magnetis"
+    ],
+    "markets": [
+      "financial services",
+      "advisor"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "deals": [
+      {
+        "id": "1234",
+        "date": "2015-08-01",
+        "type": "raised funds",
+        "series": "seed",
+        "investors": [
+          "Monashees",
+          "Redpoint e.ventures",
+          "500Startups"
+        ],
+        "currency": "BRL",
+        "amount": 3_000_000
+      }
+    ],
+    "people": [
+      {
+        "id": "1",
+        "name": "Luciano Tavares",
+        "role": "CEO",
+        "image": "/people/1/mug.png"
+      },
+      {
+        "id": "2",
+        "name": "Fabiano Beselga",
+        "role": "CTO",
+        "image": "/people/2/mug.png"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     },
-    {
-      "id": "2",
-      "name": "Fabiano Beselga",
-      "role": "CTO",
-      "image": "/people/2/mug.png"
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
+    },
+    "verified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id": "42",
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
-  },
-  "verified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id": "42",
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -223,20 +223,22 @@ Create a new company
 
 ````
 {
-  "name": "Magnetis",
-  "description": "Magnetis is the best online advisor ever",
-  "logo": "/companies/42/logo.png",
-  "website": "magnetis.com.br",
-  "social_links": [
-    "twitter.com/@magnetis"
-  ],
-  "markets": [
-    "financial services",
-    "advisor"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ]
+  "company": {
+    "name": "Magnetis",
+    "description": "Magnetis is the best online advisor ever",
+    "logo": "/companies/42/logo.png",
+    "website": "magnetis.com.br",
+    "social_links": [
+      "twitter.com/@magnetis"
+    ],
+    "markets": [
+      "financial services",
+      "advisor"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ]
+  }
 }
 ````
 * Sample response:
@@ -244,27 +246,28 @@ Create a new company
 ````
 HTTP/1.1 201 Created
 {
-  "object": "company",
-  "id": "42",
-  "name": "Magnetis",
-  "description": "Magnetis is the best online advisor ever",
-  "logo": "/companies/42/logo.png",
-  "website": "magnetis.com.br",
-  "social_links": [
-    "twitter.com/@magnetis"
-  ],
-  "markets": [
-    "financial services",
-    "advisor"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
+  "company": {
+    "id": "42",
+    "name": "Magnetis",
+    "description": "Magnetis is the best online advisor ever",
+    "logo": "/companies/42/logo.png",
+    "website": "magnetis.com.br",
+    "social_links": [
+      "twitter.com/@magnetis"
+    ],
+    "markets": [
+      "financial services",
+      "advisor"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    }
   }
 }
 ````
@@ -277,7 +280,9 @@ Update a company
 
 ````
 {
-  "description": "Magnetis is the most awesome online advisor ever"
+  "company": {
+    "description": "Magnetis is the most awesome online advisor ever"
+  }
 }
 ````
 * Sample response:
@@ -285,33 +290,34 @@ Update a company
 ````
 HTTP/1.1 200 OK
 {
-  "object": "company",
-  "id": "42",
-  "name": "Magnetis",
-  "description": "Magnetis is the most awesome online advisor ever",
-  "logo": "/companies/42/logo.png",
-  "website": "magnetis.com.br",
-  "social_links": [
-    "twitter.com/@magnetis"
-  ],
-  "markets": [
-    "financial services",
-    "advisor"
-  ],
-  "locations": [
-    "São Paulo, Brazil"
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
+  "company": {
+    "id": "42",
+    "name": "Magnetis",
+    "description": "Magnetis is the most awesome online advisor ever",
+    "logo": "/companies/42/logo.png",
+    "website": "magnetis.com.br",
+    "social_links": [
+      "twitter.com/@magnetis"
+    ],
+    "markets": [
+      "financial services",
+      "advisor"
+    ],
+    "locations": [
+      "São Paulo, Brazil"
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
+    }
   }
 }
 ````
