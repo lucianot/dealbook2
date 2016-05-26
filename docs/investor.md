@@ -43,37 +43,37 @@ HTTP/1.1 200 OK
           "deal": "2345"
         }
       ],
-      "people": [
+      "persons": [
         {
           "id": "101",
           "name": "Eric",
           "role": "Partner",
-          "image": "/people/101/mug.png"
+          "image": "/persons/101/mug.png"
         },
         {
           "id": "102",
           "name": "Marcelo",
           "role": "Partner",
-          "image": "/people/102/mug.png"
+          "image": "/persons/102/mug.png"
         }
       ],
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     },
     {
@@ -104,37 +104,37 @@ HTTP/1.1 200 OK
           "deal": "2345"
         }
       ],
-      "people": [
+      "persons": [
         {
           "id": "201",
           "name": "Manoel",
           "role": "Partner",
-          "image": "/people/201/mug.png"
+          "image": "/persons/201/mug.png"
         },
         {
           "id": "202",
           "name": "Anderson",
           "role": "Partner",
-          "image": "/people/202/mug.png"
+          "image": "/persons/202/mug.png"
         }
       ],
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     }
   ]
@@ -181,37 +181,37 @@ HTTP/1.1 200 OK
         "deal": "2345"
       }
     ],
-    "people": [
+    "persons": [
       {
         "id": "101",
         "name": "Eric",
         "role": "Partner",
-        "image": "/people/101/mug.png"
+        "image": "/persons/101/mug.png"
       },
       {
         "id": "102",
         "name": "Marcelo",
         "role": "Partner",
-        "image": "/people/102/mug.png"
+        "image": "/persons/102/mug.png"
       }
     ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     },
     "verified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id": "42",
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -278,25 +278,25 @@ HTTP/1.1 201 Created
         "deal": "2345"
       }
     ],
-    "people": [
+    "persons": [
       {
         "id": "101",
         "name": "Eric",
         "role": "Partner",
-        "image": "/people/101/mug.png"
+        "image": "/persons/101/mug.png"
       },
       {
         "id": "102",
         "name": "Marcelo",
         "role": "Partner",
-        "image": "/people/102/mug.png"
+        "image": "/persons/102/mug.png"
       }
     ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -341,13 +341,13 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     }
   }
 }

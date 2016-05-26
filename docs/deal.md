@@ -63,19 +63,19 @@ HTTP/1.1 200 OK
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     },
     {
@@ -146,19 +146,19 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     },
     "verified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id": "42",
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -242,13 +242,13 @@ HTTP/1.1 201 Created
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     }
   }
 }
@@ -322,13 +322,13 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     }
   }
 }

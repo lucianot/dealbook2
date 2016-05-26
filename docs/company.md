@@ -45,37 +45,37 @@ HTTP/1.1 200 OK
           "amount": 3_000_000
         }
       ],
-      "people": [
+      "persons": [
         {
           "id": "1",
           "name": "Luciano Tavares",
           "role": "CEO",
-          "image": "/people/1/mug.png"
+          "image": "/persons/1/mug.png"
         },
         {
           "id": "2",
           "name": "Fabiano Beselga",
           "role": "CTO",
-          "image": "/people/2/mug.png"
+          "image": "/persons/2/mug.png"
         }
       ],
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     },
     {
@@ -106,31 +106,31 @@ HTTP/1.1 200 OK
           "amount": 300_000
         }
       ],
-      "people": [
+      "persons": [
         {
           "id": "34",
           "name": "Edmar Ferreira",
           "role": "CEO",
-          "image": "/people/34/mug.png"
+          "image": "/persons/34/mug.png"
         }
       ],
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     }
   ]
@@ -179,37 +179,37 @@ HTTP/1.1 200 OK
         "amount": 3_000_000
       }
     ],
-    "people": [
+    "persons": [
       {
         "id": "1",
         "name": "Luciano Tavares",
         "role": "CEO",
-        "image": "/people/1/mug.png"
+        "image": "/persons/1/mug.png"
       },
       {
         "id": "2",
         "name": "Fabiano Beselga",
         "role": "CTO",
-        "image": "/people/2/mug.png"
+        "image": "/persons/2/mug.png"
       }
     ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     },
     "verified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id": "42",
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -266,7 +266,7 @@ HTTP/1.1 201 Created
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -310,13 +310,13 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     }
   }
 }

@@ -2,7 +2,7 @@
 __Person__
 
 `GET /1/persons.json`
-Get a list of people
+Get a list of persons
 
 * Required permission: read
 * Arguments:
@@ -17,7 +17,7 @@ HTTP/1.1 200 OK
     {
       "id": "1",
       "name": "Luciano Tavares",
-      "image": "/people/1/mug.png",
+      "image": "/persons/1/mug.png",
       "website": "napkn.co",
       "social_links": [
         "twitter.com/@lucianot"
@@ -40,25 +40,25 @@ HTTP/1.1 200 OK
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     },
     {
       "id": "2",
       "name": "Fabiano Beselga",
-      "image": "/people/2/mug.png",
+      "image": "/persons/2/mug.png",
       "website": "beselga.com",
       "social_links": [
         "twitter.com/@fbzga"
@@ -75,19 +75,19 @@ HTTP/1.1 200 OK
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       },
       "modified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 48,
         "name": "Elon Musk",
-        "image": "/people/48/mug.png"
+        "image": "/persons/48/mug.png"
       },
       "verified": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id": "42",
         "name": "Diego Gomes",
-        "image": "/people/42/mug.png"
+        "image": "/persons/42/mug.png"
       }
     }
   ]
@@ -108,7 +108,7 @@ HTTP/1.1 200 OK
   "person": {
     "id": "1",
     "name": "Luciano Tavares",
-    "image": "/people/1/mug.png",
+    "image": "/persons/1/mug.png",
     "website": "napkn.co",
     "social_links": [
       "twitter.com/@lucianot"
@@ -131,19 +131,19 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     },
     "verified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id": "42",
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -159,7 +159,7 @@ Create a new person
 {
   "person": {
     "name": "Luciano Tavares",
-    "image": "/people/1/mug.png",
+    "image": "/persons/1/mug.png",
     "website": "napkn.co",
     "social_links": [
       "twitter.com/@lucianot"
@@ -175,7 +175,7 @@ HTTP/1.1 201 Created
   "person": {
     "id": "1",
     "name": "Luciano Tavares",
-    "image": "/people/1/mug.png",
+    "image": "/persons/1/mug.png",
     "website": "napkn.co",
     "social_links": [
       "twitter.com/@lucianot"
@@ -198,7 +198,7 @@ HTTP/1.1 201 Created
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     }
   }
 }
@@ -225,7 +225,7 @@ HTTP/1.1 200 OK
   "person": {
     "id": "1",
     "name": "Luciano Mascarenhas Tavares",
-    "image": "/people/1/mug.png",
+    "image": "/persons/1/mug.png",
     "website": "napkn.co",
     "social_links": [
       "twitter.com/@lucianot"
@@ -248,13 +248,13 @@ HTTP/1.1 200 OK
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
       "name": "Diego Gomes",
-      "image": "/people/42/mug.png"
+      "image": "/persons/42/mug.png"
     },
     "modified": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 48,
       "name": "Elon Musk",
-      "image": "/people/48/mug.png"
+      "image": "/persons/48/mug.png"
     }
   }
 }
