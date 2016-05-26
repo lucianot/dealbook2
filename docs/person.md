@@ -13,7 +13,6 @@ Get a list of people
 ````
 HTTP/1.1 200 OK
 {
-  "object": "list",
   "persons": [
     {
       "id": "1",
@@ -106,45 +105,46 @@ Get a single person
 ````
 HTTP/1.1 200 OK
 {
-  "object": "person",
-  "id": "1",
-  "name": "Luciano Tavares",
-  "image": "/people/1/mug.png",
-  "website": "napkn.co",
-  "social_links": [
-    "twitter.com/@lucianot"
-  ],
-  "companies": [
-    {
-      "id": "42",
-      "name": "Magnetis",
-      "role": "CEO"
+  "person": {
+    "id": "1",
+    "name": "Luciano Tavares",
+    "image": "/people/1/mug.png",
+    "website": "napkn.co",
+    "social_links": [
+      "twitter.com/@lucianot"
+    ],
+    "companies": [
+      {
+        "id": "42",
+        "name": "Magnetis",
+        "role": "CEO"
+      }
+    ],
+    "investors": [
+      {
+        "id": "1000",
+        "name": "Napkn Ventures",
+        "role": "partner"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
+    },
+    "verified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id": "42",
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "investors": [
-    {
-      "id": "1000",
-      "name": "Napkn Ventures",
-      "role": "partner"
-    }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
-  },
-  "verified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id": "42",
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -157,24 +157,14 @@ Create a new person
 
 ````
 {
-  "name": "Luciano Tavares",
-  "image": "/people/1/mug.png",
-  "website": "napkn.co",
-  "social_links": [
-    "twitter.com/@lucianot"
-  ],
-  "companies": [
-    {
-      "id": "42",
-      "role": "CEO"
-    }
-  ],
-  "investors": [
-    {
-      "id": "1000",
-      "role": "partner"
-    }
-  ],
+  "person": {
+    "name": "Luciano Tavares",
+    "image": "/people/1/mug.png",
+    "website": "napkn.co",
+    "social_links": [
+      "twitter.com/@lucianot"
+    ]
+  }
 }
 ````
 * Sample response:
@@ -182,33 +172,34 @@ Create a new person
 ````
 HTTP/1.1 201 Created
 {
-  "object": "person",
-  "id": "1",
-  "name": "Luciano Tavares",
-  "image": "/people/1/mug.png",
-  "website": "napkn.co",
-  "social_links": [
-    "twitter.com/@lucianot"
-  ],
-  "companies": [
-    {
-      "id": "42",
-      "name": "Magnetis",
-      "role": "CEO"
+  "person": {
+    "id": "1",
+    "name": "Luciano Tavares",
+    "image": "/people/1/mug.png",
+    "website": "napkn.co",
+    "social_links": [
+      "twitter.com/@lucianot"
+    ],
+    "companies": [
+      {
+        "id": "42",
+        "name": "Magnetis",
+        "role": "CEO"
+      }
+    ],
+    "investors": [
+      {
+        "id": "1000",
+        "name": "Napkn Ventures",
+        "role": "partner"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "investors": [
-    {
-      "id": "1000",
-      "name": "Napkn Ventures",
-      "role": "partner"
-    }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -221,7 +212,9 @@ Update a person
 
 ````
 {
-  "name": "Luciano Mascarenhas Tavares"
+  "person": {
+    "name": "Luciano Mascarenhas Tavares"
+  }
 }
 ````
 * Sample response:
@@ -229,39 +222,40 @@ Update a person
 ````
 HTTP/1.1 200 OK
 {
-  "object": "person",
-  "id": "1",
-  "name": "Luciano Mascarenhas Tavares",
-  "image": "/people/1/mug.png",
-  "website": "napkn.co",
-  "social_links": [
-    "twitter.com/@lucianot"
-  ],
-  "companies": [
-    {
-      "id": "42",
-      "name": "Magnetis",
-      "role": "CEO"
+  "person": {
+    "id": "1",
+    "name": "Luciano Mascarenhas Tavares",
+    "image": "/people/1/mug.png",
+    "website": "napkn.co",
+    "social_links": [
+      "twitter.com/@lucianot"
+    ],
+    "companies": [
+      {
+        "id": "42",
+        "name": "Magnetis",
+        "role": "CEO"
+      }
+    ],
+    "investors": [
+      {
+        "id": "1000",
+        "name": "Napkn Ventures",
+        "role": "partner"
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
     }
-  ],
-  "investors": [
-    {
-      "id": "1000",
-      "name": "Napkn Ventures",
-      "role": "partner"
-    }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
   }
 }
 ````

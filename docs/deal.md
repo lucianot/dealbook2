@@ -13,10 +13,8 @@ Get a list of deals
 ````
 HTTP/1.1 200 OK
 {
-  "object": "list",
   "deals": [
     {
-      "object": "deal",
       "id": "1234",
       "date": "2015-08-01",
       "type": "raised funds",
@@ -98,69 +96,70 @@ Get a single deal
 ````
 HTTP/1.1 200 OK
 {
-  "object": "deal",
-  "id": "1234",
-  "date": "2015-08-01",
-  "type": "raised funds",
-  "series": "seed",
-  "currency": "BRL",
-  "amount": 3_000_000,
-  "company": {
-    "id": "42",
-    "name": "Magnetis",
-    "description": "Magnetis is the best online advisor ever",
-    "logo": "/companies/42/logo.png",
-    "website": "magnetis.com.br",
-    "social_links": [
-      "twitter.com/@magnetis"
-    ],
-    "markets": [
-      "financial services",
-      "advisor"
-    ],
-    "locations": [
-      "São Paulo, Brazil"
-    ]
-  },
-  "investors": [
-    {
-      "id": "1001",
-      "name": "Monashees Capital",
-      "description": "Monashees is a VC",
-      "logo": "/investors/1001/logo.png",
-      "website": "monashees.com.br",
+  "deal": {
+    "id": "1234",
+    "date": "2015-08-01",
+    "type": "raised funds",
+    "series": "seed",
+    "currency": "BRL",
+    "amount": 3_000_000,
+    "company": {
+      "id": "42",
+      "name": "Magnetis",
+      "description": "Magnetis is the best online advisor ever",
+      "logo": "/companies/42/logo.png",
+      "website": "magnetis.com.br",
       "social_links": [
-        "twitter.com/@monashees"
+        "twitter.com/@magnetis"
+      ],
+      "markets": [
+        "financial services",
+        "advisor"
+      ],
+      "locations": [
+        "São Paulo, Brazil"
       ]
     },
-    {
-      "id": "1002",
-      "name": "Redpoint e.ventures",
-      "description": "Redpoint is a VC",
-      "logo": "/investors/1002/logo.png",
-      "website": "rpev.com.br",
-      "social_links": [
-        "twitter.com/@rpev"
-      ]
+    "investors": [
+      {
+        "id": "1001",
+        "name": "Monashees Capital",
+        "description": "Monashees is a VC",
+        "logo": "/investors/1001/logo.png",
+        "website": "monashees.com.br",
+        "social_links": [
+          "twitter.com/@monashees"
+        ]
+      },
+      {
+        "id": "1002",
+        "name": "Redpoint e.ventures",
+        "description": "Redpoint is a VC",
+        "logo": "/investors/1002/logo.png",
+        "website": "rpev.com.br",
+        "social_links": [
+          "twitter.com/@rpev"
+        ]
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
+    },
+    "verified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id": "42",
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
     }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
-  },
-  "verified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id": "42",
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
   }
 }
 ````
@@ -174,16 +173,18 @@ Create a new deal
 
 ````
 {
-  "date": "2015-08-01",
-  "type": "raised funds",
-  "series": "seed",
-  "currency": "BRL",
-  "amount": 3_000_000,
-  "company_id": "42",
-  "investor_ids": [
-    "1001",
-    "1002"
-  ]
+  "deal": {
+    "date": "2015-08-01",
+    "type": "raised funds",
+    "series": "seed",
+    "currency": "BRL",
+    "amount": 3_000_000,
+    "company_id": "42",
+    "investor_ids": [
+      "1001",
+      "1002"
+    ]
+  }
 }
 ````
 * Sample response:
@@ -191,63 +192,64 @@ Create a new deal
 ````
 HTTP/1.1 201 Created
 {
-  "object": "deal",
-  "id": "1234",
-  "date": "2015-08-01",
-  "type": "raised funds",
-  "series": "seed",
-  "currency": "BRL",
-  "amount": 3_000_000,
-  "company": {
-    "id": "42",
-    "name": "Magnetis",
-    "description": "Magnetis is the best online advisor ever",
-    "logo": "/companies/42/logo.png",
-    "website": "magnetis.com.br",
-    "social_links": [
-      "twitter.com/@magnetis"
-    ],
-    "markets": [
-      "financial services",
-      "advisor"
-    ],
-    "locations": [
-      "São Paulo, Brazil"
-    ]
-  },
-  "investors": [
-    {
-      "id": "1001",
-      "name": "Monashees Capital",
-      "description": "Monashees is a VC",
-      "logo": "/investors/1001/logo.png",
-      "website": "monashees.com.br",
+  "deal": {
+    "id": "1234",
+    "date": "2015-08-01",
+    "type": "raised funds",
+    "series": "seed",
+    "currency": "BRL",
+    "amount": 3_000_000,
+    "company": {
+      "id": "42",
+      "name": "Magnetis",
+      "description": "Magnetis is the best online advisor ever",
+      "logo": "/companies/42/logo.png",
+      "website": "magnetis.com.br",
       "social_links": [
-        "twitter.com/@monashees"
+        "twitter.com/@magnetis"
+      ],
+      "markets": [
+        "financial services",
+        "advisor"
+      ],
+      "locations": [
+        "São Paulo, Brazil"
       ]
     },
-    {
-      "id": "1002",
-      "name": "Redpoint e.ventures",
-      "description": "Redpoint is a VC",
-      "logo": "/investors/1002/logo.png",
-      "website": "rpev.com.br",
-      "social_links": [
-        "twitter.com/@rpev"
-      ]
+    "investors": [
+      {
+        "id": "1001",
+        "name": "Monashees Capital",
+        "description": "Monashees is a VC",
+        "logo": "/investors/1001/logo.png",
+        "website": "monashees.com.br",
+        "social_links": [
+          "twitter.com/@monashees"
+        ]
+      },
+      {
+        "id": "1002",
+        "name": "Redpoint e.ventures",
+        "description": "Redpoint is a VC",
+        "logo": "/investors/1002/logo.png",
+        "website": "rpev.com.br",
+        "social_links": [
+          "twitter.com/@rpev"
+        ]
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
     }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
   }
 }
 ````
@@ -260,7 +262,9 @@ Update a deal
 
 ````
 {
-  "date": "2015-09-01"
+  "deal": {
+    "date": "2015-09-01"
+  }
 }
 ````
 * Sample response:
@@ -268,63 +272,64 @@ Update a deal
 ````
 HTTP/1.1 200 OK
 {
-  "object": "deal",
-  "id": "1234",
-  "date": "2015-09-01",
-  "type": "raised funds",
-  "series": "seed",
-  "currency": "BRL",
-  "amount": 3_000_000,
-  "company": {
-    "id": "42",
-    "name": "Magnetis",
-    "description": "Magnetis is the best online advisor ever",
-    "logo": "/companies/42/logo.png",
-    "website": "magnetis.com.br",
-    "social_links": [
-      "twitter.com/@magnetis"
-    ],
-    "markets": [
-      "financial services",
-      "advisor"
-    ],
-    "locations": [
-      "São Paulo, Brazil"
-    ]
-  },
-  "investors": [
-    {
-      "id": "1001",
-      "name": "Monashees Capital",
-      "description": "Monashees is a VC",
-      "logo": "/investors/1001/logo.png",
-      "website": "monashees.com.br",
+  "deal": {
+    "id": "1234",
+    "date": "2015-09-01",
+    "type": "raised funds",
+    "series": "seed",
+    "currency": "BRL",
+    "amount": 3_000_000,
+    "company": {
+      "id": "42",
+      "name": "Magnetis",
+      "description": "Magnetis is the best online advisor ever",
+      "logo": "/companies/42/logo.png",
+      "website": "magnetis.com.br",
       "social_links": [
-        "twitter.com/@monashees"
+        "twitter.com/@magnetis"
+      ],
+      "markets": [
+        "financial services",
+        "advisor"
+      ],
+      "locations": [
+        "São Paulo, Brazil"
       ]
     },
-    {
-      "id": "1002",
-      "name": "Redpoint e.ventures",
-      "description": "Redpoint is a VC",
-      "logo": "/investors/1002/logo.png",
-      "website": "rpev.com.br",
-      "social_links": [
-        "twitter.com/@rpev"
-      ]
+    "investors": [
+      {
+        "id": "1001",
+        "name": "Monashees Capital",
+        "description": "Monashees is a VC",
+        "logo": "/investors/1001/logo.png",
+        "website": "monashees.com.br",
+        "social_links": [
+          "twitter.com/@monashees"
+        ]
+      },
+      {
+        "id": "1002",
+        "name": "Redpoint e.ventures",
+        "description": "Redpoint is a VC",
+        "logo": "/investors/1002/logo.png",
+        "website": "rpev.com.br",
+        "social_links": [
+          "twitter.com/@rpev"
+        ]
+      }
+    ],
+    "created": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 42,
+      "name": "Diego Gomes",
+      "image": "/people/42/mug.png"
+    },
+    "modified": {
+      "time": "2012-02-15T15:12:21-05:00",
+      "user_id: 48,
+      "name": "Elon Musk",
+      "image": "/people/48/mug.png"
     }
-  ],
-  "created": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 42,
-    "name": "Diego Gomes",
-    "image": "/people/42/mug.png"
-  },
-  "modified": {
-    "time": "2012-02-15T15:12:21-05:00",
-    "user_id: 48,
-    "name": "Elon Musk",
-    "image": "/people/48/mug.png"
   }
 }
 ````
