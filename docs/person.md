@@ -1,7 +1,7 @@
 
 __Person__
 
-`GET /1/persons.json`
+`GET /v1/persons`
 Get a list of persons
 
 * Required permission: read
@@ -16,6 +16,7 @@ HTTP/1.1 200 OK
   "persons": [
     {
       "id": "1",
+      "href": "https://api.dealbook.co/v1/persons/1",
       "name": "Luciano Tavares",
       "image": "/persons/1/mug.png",
       "website": "napkn.co",
@@ -25,6 +26,7 @@ HTTP/1.1 200 OK
       "companies": [
         {
           "id": "42",
+          "href": "https://api.dealbook.co/v1/companies/42",
           "name": "Magnetis",
           "role": "CEO"
         }
@@ -32,6 +34,7 @@ HTTP/1.1 200 OK
       "investors": [
         {
           "id": "1000",
+          "href": "https://api.dealbook.co/v1/investors/1000",
           "name": "Napkn Ventures",
           "role": "partner"
         }
@@ -57,6 +60,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "2",
+      "href": "https://api.dealbook.co/v1/persons/2",
       "name": "Fabiano Beselga",
       "image": "/persons/2/mug.png",
       "website": "beselga.com",
@@ -66,6 +70,7 @@ HTTP/1.1 200 OK
       "companies": [
         {
           "id": "42",
+          "href": "https://api.dealbook.co/v1/companies/42",
           "name": "Magnetis",
           "role": "CTO"
         }
@@ -96,7 +101,7 @@ HTTP/1.1 200 OK
 
 ===
 
-`GET /1/persons/{{person_id}}.json`
+`GET /v1/persons/{{person_id}}`
 Get a single person
 
 * Required permission: read
@@ -107,6 +112,7 @@ HTTP/1.1 200 OK
 {
   "person": {
     "id": "1",
+    "href": "https://api.dealbook.co/v1/persons/1",
     "name": "Luciano Tavares",
     "image": "/persons/1/mug.png",
     "website": "napkn.co",
@@ -116,6 +122,7 @@ HTTP/1.1 200 OK
     "companies": [
       {
         "id": "42",
+        "href": "https://api.dealbook.co/v1/companies/42",
         "name": "Magnetis",
         "role": "CEO"
       }
@@ -123,6 +130,7 @@ HTTP/1.1 200 OK
     "investors": [
       {
         "id": "1000",
+        "href": "https://api.dealbook.co/v1/investors/1000",
         "name": "Napkn Ventures",
         "role": "partner"
       }
@@ -150,7 +158,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`POST /1/persons.json`
+`POST /v1/persons`
 Create a new person
 
 * Required permission: write
@@ -174,6 +182,7 @@ HTTP/1.1 201 Created
 {
   "person": {
     "id": "1",
+    "href": "https://api.dealbook.co/v1/persons/1",
     "name": "Luciano Tavares",
     "image": "/persons/1/mug.png",
     "website": "napkn.co",
@@ -183,6 +192,7 @@ HTTP/1.1 201 Created
     "companies": [
       {
         "id": "42",
+        "href": "https://api.dealbook.co/v1/companies/42",
         "name": "Magnetis",
         "role": "CEO"
       }
@@ -190,6 +200,7 @@ HTTP/1.1 201 Created
     "investors": [
       {
         "id": "1000",
+        "href": "https://api.dealbook.co/v1/investors/1000",
         "name": "Napkn Ventures",
         "role": "partner"
       }
@@ -205,7 +216,7 @@ HTTP/1.1 201 Created
 ````
 ===
 
-`PUT /1/persons/{{person_id}}.json`
+`PUT /v1/persons/{{person_id}}`
 Update a person
 
 * Required permission: write
@@ -224,6 +235,7 @@ HTTP/1.1 200 OK
 {
   "person": {
     "id": "1",
+    "href": "https://api.dealbook.co/v1/persons/1",
     "name": "Luciano Mascarenhas Tavares",
     "image": "/persons/1/mug.png",
     "website": "napkn.co",
@@ -233,6 +245,7 @@ HTTP/1.1 200 OK
     "companies": [
       {
         "id": "42",
+        "href": "https://api.dealbook.co/v1/companies/42",
         "name": "Magnetis",
         "role": "CEO"
       }
@@ -240,6 +253,7 @@ HTTP/1.1 200 OK
     "investors": [
       {
         "id": "1000",
+        "href": "https://api.dealbook.co/v1/investors/1000",
         "name": "Napkn Ventures",
         "role": "partner"
       }
@@ -261,7 +275,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`DELETE /1/persons/{{person_id}}.json`
+`DELETE /v1/persons/{{person_id}}`
 Destroy a person
 
 * Required permission: write

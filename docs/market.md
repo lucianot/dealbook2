@@ -1,7 +1,7 @@
 
 __Market__
 
-`GET /1/markets.json`
+`GET /v1/markets`
 Get a list of markets
 
 * Required permission: read
@@ -16,6 +16,7 @@ HTTP/1.1 200 OK
   "markets": [
     {
       "id": "101",
+      "href": "https://api.dealbook.co/v1/markets/101",
       "name": "financial services",
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
@@ -32,6 +33,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "102",
+      "href": "https://api.dealbook.co/v1/markets/102",
       "name": "content marketing",
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
@@ -52,7 +54,7 @@ HTTP/1.1 200 OK
 
 ===
 
-`GET /1/markets/{{market_id}}.json`
+`GET /v1/markets/{{market_id}}`
 Get a single market
 
 * Required permission: read
@@ -63,6 +65,7 @@ HTTP/1.1 200 OK
 {  
   "market": {
     "id": "101",
+    "href": "https://api.dealbook.co/v1/markets/101",
     "name": "financial services",
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
@@ -81,7 +84,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`POST /1/markets.json`
+`POST /v1/markets`
 Create a new market
 
 * Required permission: write
@@ -100,6 +103,7 @@ HTTP/1.1 201 Created
 {
   "market": {
     "id": "101",
+    "href": "https://api.dealbook.co/v1/markets/101",
     "name": "financial services",
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
@@ -112,7 +116,7 @@ HTTP/1.1 201 Created
 ````
 ===
 
-`PUT /1/markets/{{market_id}}.json`
+`PUT /v1/markets/{{market_id}}`
 Update a market
 
 * Required permission: write
@@ -131,6 +135,7 @@ HTTP/1.1 200 OK
 {
   "market": {
     "id": "101",
+    "href": "https://api.dealbook.co/v1/markets/101",
     "name": "investment services",
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
@@ -149,7 +154,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`DELETE /1/companies/{{company_id}}.json`
+`DELETE /v1/companies/{{company_id}}`
 Destroy a company
 
 * Required permission: write

@@ -1,7 +1,7 @@
 
 __Deal__
 
-`GET /1/deals.json`
+`GET /v1/deals`
 Get a list of deals
 
 * Required permission: read
@@ -16,12 +16,15 @@ HTTP/1.1 200 OK
   "deals": [
     {
       "id": "1234",
+      "href": "https://api.dealbook.co/v1/deals/1234",
       "date": "2015-08-01",
       "type": "raised funds",
       "series": "seed",
       "currency": "BRL",
       "amount": 3_000_000,
       "company": {
+        "id": "42",
+        "href": "https://api.dealbook.co/v1/companies/42",
         "name": "Magnetis",
         "description": "Magnetis is the best online advisor ever",
         "logo": "/companies/42/logo.png",
@@ -40,6 +43,7 @@ HTTP/1.1 200 OK
       "investors": [
         {
           "id": "1001",
+          "href": "https://api.dealbook.co/v1/investors/1001",
           "name": "Monashees Capital",
           "description": "Monashees is a VC",
           "logo": "/investors/1001/logo.png",
@@ -50,6 +54,7 @@ HTTP/1.1 200 OK
         },
         {
           "id": "1002",
+          "href": "https://api.dealbook.co/v1/investors/1002",
           "name": "Redpoint e.ventures",
           "description": "Redpoint is a VC",
           "logo": "/investors/1002/logo.png",
@@ -87,7 +92,7 @@ HTTP/1.1 200 OK
 
 ===
 
-`GET /1/deals/{{deal_id}}.json`
+`GET /v1/deals/{{deal_id}}`
 Get a single deal
 
 * Required permission: read
@@ -98,6 +103,7 @@ HTTP/1.1 200 OK
 {
   "deal": {
     "id": "1234",
+    "href": "https://api.dealbook.co/v1/deals/1234",
     "date": "2015-08-01",
     "type": "raised funds",
     "series": "seed",
@@ -105,6 +111,7 @@ HTTP/1.1 200 OK
     "amount": 3_000_000,
     "company": {
       "id": "42",
+      "href": "https://api.dealbook.co/v1/companies/42",
       "name": "Magnetis",
       "description": "Magnetis is the best online advisor ever",
       "logo": "/companies/42/logo.png",
@@ -123,6 +130,7 @@ HTTP/1.1 200 OK
     "investors": [
       {
         "id": "1001",
+        "href": "https://api.dealbook.co/v1/investors/1001",
         "name": "Monashees Capital",
         "description": "Monashees is a VC",
         "logo": "/investors/1001/logo.png",
@@ -133,6 +141,7 @@ HTTP/1.1 200 OK
       },
       {
         "id": "1002",
+        "href": "https://api.dealbook.co/v1/investors/1002",
         "name": "Redpoint e.ventures",
         "description": "Redpoint is a VC",
         "logo": "/investors/1002/logo.png",
@@ -166,7 +175,7 @@ HTTP/1.1 200 OK
 
 ===
 
-`POST /1/deals.json`
+`POST /v1/deals`
 Create a new deal
 
 * Required permission: write
@@ -194,6 +203,7 @@ HTTP/1.1 201 Created
 {
   "deal": {
     "id": "1234",
+    "href": "https://api.dealbook.co/v1/investors/1234",
     "date": "2015-08-01",
     "type": "raised funds",
     "series": "seed",
@@ -201,6 +211,7 @@ HTTP/1.1 201 Created
     "amount": 3_000_000,
     "company": {
       "id": "42",
+      "href": "https://api.dealbook.co/v1/companies/42",
       "name": "Magnetis",
       "description": "Magnetis is the best online advisor ever",
       "logo": "/companies/42/logo.png",
@@ -219,6 +230,7 @@ HTTP/1.1 201 Created
     "investors": [
       {
         "id": "1001",
+        "href": "https://api.dealbook.co/v1/investors/1001",
         "name": "Monashees Capital",
         "description": "Monashees is a VC",
         "logo": "/investors/1001/logo.png",
@@ -229,6 +241,7 @@ HTTP/1.1 201 Created
       },
       {
         "id": "1002",
+        "href": "https://api.dealbook.co/v1/investors/1002",
         "name": "Redpoint e.ventures",
         "description": "Redpoint is a VC",
         "logo": "/investors/1002/logo.png",
@@ -255,7 +268,7 @@ HTTP/1.1 201 Created
 ````
 ===
 
-`PUT /1/deals/{{deal_id}}.json`
+`PUT /v1/deals/{{deal_id}}`
 Update a deal
 
 * Required permission: write
@@ -274,6 +287,7 @@ HTTP/1.1 200 OK
 {
   "deal": {
     "id": "1234",
+    "href": "https://api.dealbook.co/v1/deals/1234",
     "date": "2015-09-01",
     "type": "raised funds",
     "series": "seed",
@@ -281,6 +295,7 @@ HTTP/1.1 200 OK
     "amount": 3_000_000,
     "company": {
       "id": "42",
+      "href": "https://api.dealbook.co/v1/companies/42",
       "name": "Magnetis",
       "description": "Magnetis is the best online advisor ever",
       "logo": "/companies/42/logo.png",
@@ -299,6 +314,7 @@ HTTP/1.1 200 OK
     "investors": [
       {
         "id": "1001",
+        "href": "https://api.dealbook.co/v1/investors/1001",
         "name": "Monashees Capital",
         "description": "Monashees is a VC",
         "logo": "/investors/1001/logo.png",
@@ -309,6 +325,7 @@ HTTP/1.1 200 OK
       },
       {
         "id": "1002",
+        "href": "https://api.dealbook.co/v1/investors/1002",
         "name": "Redpoint e.ventures",
         "description": "Redpoint is a VC",
         "logo": "/investors/1002/logo.png",
@@ -335,7 +352,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`DELETE /1/deals/{{deal_id}}.json`
+`DELETE /v1/deals/{{deal_id}}`
 Destroy a deal
 
 * Required permission: write

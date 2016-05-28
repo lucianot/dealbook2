@@ -1,7 +1,7 @@
 
 __Search__
 
-`GET /1/search.json`
+`GET /v1/search`
 Get information about companies, investors or persons that match a keyword string.
 
 * Required permission: read
@@ -19,6 +19,7 @@ HTTP/1.1 200 OK
   "companies": [
     {
       "id": "42",
+      "href": "https://api.dealbook.co/v1/companies/42",
       "name": "Magnetis",
       "description": "Magnetis is the best online advisor ever",
       "logo": "/companies/42/logo.png",
@@ -56,6 +57,7 @@ HTTP/1.1 200 OK
   "investors": [
     {
       "id": "1001",
+      "href": "https://api.dealbook.co/v1/investors/1001",
       "name": "Monashees Capital",
       "description": "Monashees is a VC",
       "logo": "/investors/1001/logo.png",
@@ -94,6 +96,7 @@ HTTP/1.1 200 OK
   "persons": [
     {
       "id": "1",
+      "href": "https://api.dealbook.co/v1/persons/1",
       "name": "Luciano Tavares",
       "image": "/persons/1/mug.png",
       "website": "napkn.co",
@@ -103,6 +106,7 @@ HTTP/1.1 200 OK
       "companies": [
         {
           "id": "42",
+          "href": "https://api.dealbook.co/v1/companies/42",
           "name": "Magnetis",
           "role": "CEO"
         }
@@ -110,6 +114,7 @@ HTTP/1.1 200 OK
       "investors": [
         {
           "id": "1000",
+          "href": "https://api.dealbook.co/v1/investors/1000",
           "name": "Napkn Ventures",
           "role": "partner"
         }

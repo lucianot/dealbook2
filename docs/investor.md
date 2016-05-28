@@ -1,7 +1,7 @@
 
 __Investor__
 
-`GET /1/investors.json`
+`GET /v1/investors`
 Get a list of investors
 
 * Required permission: read
@@ -16,6 +16,7 @@ HTTP/1.1 200 OK
   "investors": [
     {
       "id": "1001",
+      "href": "https://api.dealbook.co/v1/investors/1001",
       "name": "Monashees Capital",
       "description": "Monashees is a VC",
       "logo": "/investors/1001/logo.png",
@@ -34,11 +35,13 @@ HTTP/1.1 200 OK
       "investments": [
         {
           "id": "42",
+          "href": "https://api.dealbook.co/v1/companies/42",
           "company": "Magnetis",
           "deal": "1234"
         },
         {
           "id": "24",
+          "href": "https://api.dealbook.co/v1/companies/24",
           "company": "RockContent",
           "deal": "2345"
         }
@@ -46,12 +49,14 @@ HTTP/1.1 200 OK
       "persons": [
         {
           "id": "101",
+          "href": "https://api.dealbook.co/v1/persons/101",
           "name": "Eric",
           "role": "Partner",
           "image": "/persons/101/mug.png"
         },
         {
           "id": "102",
+          "href": "https://api.dealbook.co/v1/persons/102",
           "name": "Marcelo",
           "role": "Partner",
           "image": "/persons/102/mug.png"
@@ -78,6 +83,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "1002",
+      "href": "https://api.dealbook.co/v1/investors/1002",
       "name": "Redpoint e.ventures",
       "description": "Redpoint is a VC",
       "logo": "/investors/1002/logo.png",
@@ -95,11 +101,13 @@ HTTP/1.1 200 OK
       "investments": [
         {
           "id": "42",
+          "href": "https://api.dealbook.co/v1/companies/42",
           "company": "Magnetis",
           "deal": "1234"
         },
         {
           "id": "24",
+          "href": "https://api.dealbook.co/v1/companies/24",
           "company": "RockContent",
           "deal": "2345"
         }
@@ -107,12 +115,14 @@ HTTP/1.1 200 OK
       "persons": [
         {
           "id": "201",
+          "href": "https://api.dealbook.co/v1/persons/201",
           "name": "Manoel",
           "role": "Partner",
           "image": "/persons/201/mug.png"
         },
         {
           "id": "202",
+          "href": "https://api.dealbook.co/v1/persons/202",
           "name": "Anderson",
           "role": "Partner",
           "image": "/persons/202/mug.png"
@@ -143,7 +153,7 @@ HTTP/1.1 200 OK
 
 ===
 
-`GET /1/investors/{{investor_id}}.json`
+`GET /v1/investors/{{investor_id}}`
 Get a single investor
 
 * Required permission: read
@@ -218,7 +228,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`POST /1/investors.json`
+`POST /1/investors`
 Create a new investor
 
 * Required permission: write
@@ -251,6 +261,7 @@ HTTP/1.1 201 Created
 {
   "investor": {
     "id": "1001",
+    "href": "https://api.dealbook.co/v1/investors/1001",
     "name": "Monashees Capital",
     "description": "Monashees is a VC",
     "logo": "/investors/1001/logo.png",
@@ -269,11 +280,13 @@ HTTP/1.1 201 Created
     "investments": [
       {
         "id": "42",
+        "href": "https://api.dealbook.co/v1/companies/42",
         "company": "Magnetis",
         "deal": "1234"
       },
       {
         "id": "24",
+        "href": "https://api.dealbook.co/v1/companies/24",
         "company": "RockContent",
         "deal": "2345"
       }
@@ -281,12 +294,14 @@ HTTP/1.1 201 Created
     "persons": [
       {
         "id": "101",
+        "href": "https://api.dealbook.co/v1/persons/101",
         "name": "Eric",
         "role": "Partner",
         "image": "/persons/101/mug.png"
       },
       {
         "id": "102",
+        "href": "https://api.dealbook.co/v1/persons/102",
         "name": "Marcelo",
         "role": "Partner",
         "image": "/persons/102/mug.png"
@@ -303,7 +318,7 @@ HTTP/1.1 201 Created
 ````
 ===
 
-`PUT /1/investors/{{investor_id}}.json`
+`PUT /v1/investors/{{investor_id}}`
 Update an investor
 
 * Required permission: write
@@ -322,6 +337,7 @@ HTTP/1.1 200 OK
 {
   "investor": {
     "id": "1001",
+    "href": "https://api.dealbook.co/v1/investors/1001",
     "name": "Monashees Capital",
     "description": "Monashees is a cool VC",
     "logo": "/investors/1001/logo.png",
@@ -354,7 +370,7 @@ HTTP/1.1 200 OK
 ````
 ===
 
-`DELETE /1/investors/{{investor_id}}.json`
+`DELETE /v1/investors/{{investor_id}}`
 Destroy an investor
 
 * Required permission: write
