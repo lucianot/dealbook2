@@ -64,6 +64,9 @@ HTTP/1.1 200 OK
           ]
         }
       ],
+      "source_urls": [
+        "http://g1.com.br/magnetis-capta-rodada"
+      ],
       "created": {
         "time": "2012-02-15T15:12:21-05:00",
         "user_id: 42,
@@ -151,6 +154,9 @@ HTTP/1.1 200 OK
         ]
       }
     ],
+    "source_urls": [
+      "http://g1.com.br/magnetis-capta-rodada"
+    ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
       "user_id: 42,
@@ -192,6 +198,9 @@ Create a new deal
     "investor_ids": [
       "1001",
       "1002"
+    ],
+    "source_urls": [
+      "http://g1.com.br/magnetis-capta-rodada"
     ]
   }
 }
@@ -250,6 +259,9 @@ HTTP/1.1 201 Created
           "twitter.com/@rpev"
         ]
       }
+    ],
+    "source_urls": [
+      "http://g1.com.br/magnetis-capta-rodada"
     ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
@@ -334,6 +346,9 @@ HTTP/1.1 200 OK
           "twitter.com/@rpev"
         ]
       }
+    ],
+    "source_urls": [
+      "http://g1.com.br/magnetis-capta-rodada"
     ],
     "created": {
       "time": "2012-02-15T15:12:21-05:00",
